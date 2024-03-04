@@ -18,14 +18,18 @@ const Institucion = () => {
     <>
       <NavMenu />
       <form onSubmit={handleSubmit(onSubmit)}>
-        <input defaultValue="institucion" {...register('institucion')} />
+      <label htmlFor="institucion">Institucion</label>
+        <input id="institucion" defaultValue="institucion" {...register('institucion')} />
         
-        <input {...register('scan', { required: false })} />
+        <label htmlFor="scan">Scan QR</label>
+        <input id="scan" {...register('scan', { required: false })} />
         {errors.scan && <span>This field is required</span>}
 
-        <input {...register('quality', { required: false })} />
+        <label htmlFor="quality">Calidad</label>
+        <input id="quality" {...register('quality', { required: false })} />
 
-        <input {...register('notes', { required: false })} />
+        <label htmlFor="notes">Notas</label>
+        <input id="notes" {...register('notes', { required: false })} />
 
         <input type="submit" />
       </form>
