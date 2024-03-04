@@ -22,11 +22,9 @@ const Institucion = () => {
         <input {...register('scan', { required: true })} />
         {errors.scan && <span>This field is required</span>}
 
-        <input {...register('quality', { required: true })} />
-        {errors.quality && <span>This field is required</span>}
+        <input {...register('quality', { required: false })} />
 
-        <input {...register('notes', { required: true })} />
-        {errors.notes && <span>This field is required</span>}
+        <input {...register('notes', { required: false })} />
 
         <input type="submit" />
       </form>
