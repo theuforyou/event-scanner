@@ -1,10 +1,10 @@
-import Navbar from '../../components/Navbar'
+import NavMenu from '../../components/NavMenu'
 import {Link} from 'react-router-dom';
 const Home = () => {
 
     return(
         <>
-            <Navbar />
+            <NavMenu />
             <div>Home</div>
         </>
     );

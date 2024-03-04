@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import Navbar from '../../components/Navbar';
+import NavMenu from '../../components/NavMenu';
 
 
 
@@ -7,7 +7,7 @@ const Institucion = () => {
 
 return(
     <>
-    <Navbar />
+    <NavMenu />
     <div>SCAN</div>
     </>
 );
