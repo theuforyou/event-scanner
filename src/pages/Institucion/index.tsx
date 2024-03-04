@@ -1,9 +1,9 @@
 import NavMenu from '../../components/NavMenu';
-import { useForm, Controller } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 
 interface FormData {
   institucion: string;
-  scan: File;
+  scan: string;
   quality: string;
   notes: string;
 }
@@ -19,18 +19,8 @@ const Institucion = () => {
       <NavMenu />
       <form onSubmit={handleSubmit(onSubmit)}>
         <input defaultValue="institucion" {...register('institucion')} />
-        <Controller
-          name="scan"
-          control={control}
-          render={({ field }) => (
-            <input
-              type="file"
-              {...field}
-              accept="image/*" // Allow only image files
-            />
-          )}
-        />
-
+        
+        <input {...register('scan', { required: false })} />
         {errors.scan && <span>This field is required</span>}
 
         <input {...register('quality', { required: false })} />
