@@ -11,7 +11,7 @@ interface FormData {
 }
 
 const Institucion = () => {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm<FormData>();
+  const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
   const onSubmit = (data: FormData) => console.log(data);
   return (
     <>
