@@ -1,3 +1,6 @@
+# Scaner QR
+Captacion de regitros, utiliznaod un scanner de QR por institucion.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
